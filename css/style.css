@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+
+  font-family: 'Poppins', sans-serif;
+  background-color: #B3CAA6;
+
+}
+
+.header{
+  height: 86px;
+  position: absolute;
+  width: 32%;
+  left: 205px;
+  padding-left: 30px;
+}
+
+#mensagemTopo{
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  margin-bottom: 0;
+}
+#diaDeHoje{
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 275;
+  font-size: 12px;
+  line-height: 18px;
+  color: white;
+  margin-top: 6px;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 205px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  top: 0;
+}
+
+.campo{
+  box-sizing: border-box;
+
+  width: 186px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+
+  background: #E3E3E3;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 21px;
+}
+
+.box_campo{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.inputSearch{
+  border: 0px;
+  background-color: transparent;
+  width: 100%;
+  margin-left: 10px;
+  padding-right: 5px;
+}
+.inputSearch:focus{
+  outline: 0;
+}
+
+#iconeP{
+  margin-left: 10px;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #D2D2D2;
+  color: black;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.content{
+  position: absolute;
+  width: 78%;
+  right: 0;
+  background-color: #fff;
+  border-top-left-radius: 150px;
+  height: 100%;
+  top: 46%;
+}
+.content h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  margin-top: 85px;
+  margin-left: 75px;
+
+  color: #585757;
+}
+
+.perfil {
+  padding-left: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.nome-perfil {
+  padding-left: 8px;
+
+}
+
+form.example input[type=text] {
+  padding: 8px;
+  font-size: 12px;
+  border: 1px solid grey;
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  float: left;
+  width: 87%;
+  background: #D2D2D2;
+  border-radius: 10px;
+}
+
+
+
+
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+svg {
+  width: 23px;
+  vertical-align: -7px;
+  padding-right: 3px;
+
+}
