@@ -110,7 +110,7 @@ li a:hover:not(.active) {
   background-color: #fff;
   border-top-left-radius: 150px;
   height: 100%;
-  top: 46%;
+  top: 14.1%;
 }
 .content h1 {
   font-style: normal;
@@ -137,32 +137,34 @@ li a:hover:not(.active) {
 
 }
 
-form.example input[type=text] {
-  padding: 8px;
-  font-size: 12px;
-  border: 1px solid grey;
-  margin-top: 8px;
-  margin-left: 10px;
-  margin-bottom: 15px;
-  float: left;
-  width: 87%;
-  background: #D2D2D2;
-  border-radius: 10px;
-}
-
-
-
-
-
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
 svg {
   width: 23px;
   vertical-align: -7px;
   padding-right: 3px;
 
+}
+
+table {
+  font-family: arial, sans-serif;
+  width: 100%;
+  margin-left:75px ;
+  border-collapse:separate;
+  border: solid #ccc 1px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+       border-radius: 25px;
+  
+}
+
+
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+  border-radius: 100%;
 }
