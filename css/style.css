@@ -147,24 +147,44 @@ svg {
 
 table {
   font-family: arial, sans-serif;
-  width: 100%;
-  margin-left:75px ;
-  border-collapse:separate;
+  width: 90%;
+  margin:75px 75px;
+  border-collapse:collapse;
   border: solid #ccc 1px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
-       border-radius: 25px;
-  
 }
 
 
 
 td, th {
-  text-align: left;
+  text-align: center;
+  color: #101010;
   padding: 8px;
+  width: 20px;
 }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
+tr {
+  background-color: #b3caa641;
   border-radius: 100%;
+}
+.LeftRadiusTD{
+  border-bottom-left-radius: 25px;
+}
+.RightRadiusTD{
+  border-bottom-right-radius: 25px;
+}
+td, th{
+  border-bottom: solid 2px #fff; 
+  border-left: solid 2px #fff;
+}
+th{
+  text-transform: uppercase;
+  background-color: white;
+}
+.bottomLine{
+  border-top: 2pt solid #B3CAA6;
+}
+.bold{
+  font-weight: bold;
 }
