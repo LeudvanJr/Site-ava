@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<!-- KETLEN -->
+
   <div class="header">
     <p id="mensagemTopo">
       Boa Tarde, Leudvan!
@@ -73,6 +73,7 @@
         Calendário
       </a>
     </li>
+    
     <li><a href="cronograma.html"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M1 2C1 1.44772 1.44772 1 2 1H24C24.5523 1 25 1.44772 25 2V6C25 6.55228 24.5523 7 24 7H2C1.44772 7 1 6.55228 1 6V2ZM2 16C1.44772 16 1 15.5523 1 15V11C1 10.4477 1.44772 10 2 10H6C6.55228 10 7 10.4477 7 11V15C7 15.5523 6.55228 16 6 16H2ZM11 13C10.4477 13 10 12.5523 10 12V11C10 10.4477 10.4477 10 11 10H15C15.5523 10 16 10.4477 16 11V12C16 12.5523 15.5523 13 15 13H11ZM20 17.5C19.4477 17.5 19 17.0523 19 16.5V11C19 10.4477 19.4477 10 20 10H24C24.5523 10 25 10.4477 25 11V16.5C25 17.0523 24.5523 17.5 24 17.5H20ZM11 25C10.4477 25 10 24.5523 10 24V17C10 16.4477 10.4477 16 11 16H15C15.5523 16 16 16.4477 16 17V24C16 24.5523 15.5523 25 15 25H11ZM2 25C1.44772 25 1 24.5523 1 24V20C1 19.4477 1.44772 19 2 19H6C6.55228 19 7 19.4477 7 20V24C7 24.5523 6.55228 25 6 25H2ZM20 25C19.4477 25 19 24.5523 19 24V21.5C19 20.9477 19.4477 20.5 20 20.5H24C24.5523 20.5 25 20.9477 25 21.5V24C25 24.5523 24.5523 25 24 25H20Z"
@@ -95,12 +96,65 @@
 
         Ajustes</a></li>
   </ul>
+  
+
+  <div class="img-globo">
+    <img src="images/image.png" alt="">
+
+  </div>
+
 
   <div class="content">
     <h1>
-      Titulo
+      Matérias
     </h1>
+
+    
+    <div id="menu-container" class="arrow">
+      <div id="btn-nav-previous" style="fill: black">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+          <path d="M0 0h24v24H0z" fill="none" />
+        </svg>
+      </div>
+      <div id="btn-nav-next">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+          <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+          <path d="M0 0h24v24H0z" fill="none" />
+        </svg>
+      </div>
+
+     
+    
+    </div>
+    <section>
+      <div class="menu-inner-box">
+        <div class="menu">
+          <a class="menu-item" href="#"><img src="images/bds.png" alt=""></a>
+          <a class="menu-item" href="#"><img src="images/historia.png" alt=""></a>
+          <a class="menu-item" href="#"><img src="images/geografia.png" alt=""></a>
+          <a class="menu-item" href="#"><img src="images/matematica.png" alt=""></a>
+          <a class="menu-item" href="#"><img src="images/matematica.png" alt=""></a>
+          
+
+        </div>
+      </div>
+    </section>
+   
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+   
+    $(document).ready(function(){
+        $('#btn-nav-previous').click(function(){
+            $(".menu-inner-box").animate({scrollLeft: "-=110px"});
+        });
+        
+        $('#btn-nav-next').click(function(){
+            $(".menu-inner-box").animate({scrollLeft: "+=110px"});
+        });
+    });</script>
 
 </body>
 
