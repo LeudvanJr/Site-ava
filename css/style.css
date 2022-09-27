@@ -247,6 +247,23 @@ position: relative;
 text-align: center;
 } */
 
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #F1F1F1;
+}
+
+.card p{
+background-color: rgb(255, 255, 255);
+}
+
+.card h3{
+  background-color:#DCEEDB;
+  color: #20941A;
+}
+
 #menu-container {
   position:relative;
   width:100%;
