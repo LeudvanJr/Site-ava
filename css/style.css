@@ -109,7 +109,7 @@ li a:hover:not(.active) {
   background-color: #fff;
   border-top-left-radius: 150px;
   height: 100%;
-  top: 46%;
+  top: 14.1%;
 }
 .content h1 {
   font-style: normal;
@@ -136,33 +136,58 @@ li a:hover:not(.active) {
 
 }
 
-form.example input[type=text] {
-  padding: 8px;
-  font-size: 12px;
-  border: 1px solid grey;
-  margin-top: 8px;
-  margin-left: 10px;
-  margin-bottom: 15px;
-  float: left;
-  width: 87%;
-  background: #D2D2D2;
-  border-radius: 10px;
-}
-
-
-
-
-
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
 svg {
   width: 23px;
   vertical-align: -7px;
   padding-right: 3px;
+
+}
+
+table {
+  font-family: arial, sans-serif;
+  width: 90%;
+  margin:75px 75px;
+  border-collapse:collapse;
+  border: solid #ccc 1px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+}
+
+
+
+td, th {
+  text-align: center;
+  color: #101010;
+  padding: 8px;
+  width: 20px;
+}
+
+
+tr {
+  background-color: #b3caa641;
+  border-radius: 100%;
+}
+.LeftRadiusTD{
+  border-bottom-left-radius: 25px;
+}
+.RightRadiusTD{
+  border-bottom-right-radius: 25px;
+}
+td, th{
+  border-bottom: solid 2px #fff; 
+  border-left: solid 2px #fff;
+}
+th{
+  text-transform: uppercase;
+  background-color: white;
+}
+.bottomLine{
+  border-top: 2pt solid #B3CAA6;
+}
+.bold{
+  font-weight: bold;
+}
 
 }
 
