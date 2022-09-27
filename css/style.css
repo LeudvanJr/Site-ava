@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
-
 body {
   margin: 0;
   padding: 0;
@@ -112,8 +111,8 @@ li a:hover:not(.active) {
   height: 100%;
   top: 46%;
   z-index: -1;
-
 }
+
 .content h1 {
   font-style: normal;
   font-weight: 700;
@@ -139,33 +138,88 @@ li a:hover:not(.active) {
 
 }
 
-form.example input[type=text] {
-  padding: 8px;
-  font-size: 12px;
-  border: 1px solid grey;
-  margin-top: 8px;
-  margin-left: 10px;
-  margin-bottom: 15px;
-  float: left;
-  width: 87%;
-  background: #D2D2D2;
-  border-radius: 10px;
-}
-
-
-
-
-
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
 svg {
   width: 23px;
   vertical-align: -7px;
   padding-right: 3px;
+
+}
+
+table {
+  font-family: arial, sans-serif;
+  width: 90%;
+  margin:75px 75px;
+  border-collapse:collapse;
+  border: solid #ccc 1px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+}
+
+
+
+td, th {
+  text-align: center;
+  color: #101010;
+  padding: 8px;
+  width: 20px;
+}
+
+
+tr {
+  background-color: #b3caa641;
+  border-radius: 100%;
+}
+.LeftRadiusTD{
+  border-bottom-left-radius: 25px;
+}
+.RightRadiusTD{
+  border-bottom-right-radius: 25px;
+}
+td, th{
+  border-bottom: solid 2px #fff; 
+  border-left: solid 2px #fff;
+}
+th{
+  text-transform: uppercase;
+  background-color: white;
+}
+.bottomLine{
+  border-top: 2pt solid #B3CAA6;
+}
+.bold{
+  font-weight: bold;
+}
+
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0px 60px;
+  height: 100%;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
 
 }
 
@@ -267,3 +321,4 @@ text-align: center;
   margin-top: 15px;
 
 }
+
