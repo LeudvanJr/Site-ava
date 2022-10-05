@@ -137,22 +137,13 @@ li a:hover:not(.active) {
 
 }
 
-
 svg {
   width: 23px;
   vertical-align: -7px;
   padding-right: 3px;
+}
 
-table {
-  font-family: arial, sans-serif;
-  width: 90%;
-  margin:75px 75px;
-  border-collapse:collapse;
-  border: solid #ccc 1px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-
-table {
+.table {
   font-family: arial, sans-serif;
   width: 90%;
   margin:75px 75px;
@@ -162,14 +153,24 @@ table {
   -moz-border-radius: 25px;
 }
 
-td, th {
+.table {
+  font-family: arial, sans-serif;
+  width: 90%;
+  margin:75px 75px;
+  border-collapse:collapse;
+  border: solid #ccc 1px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+}
+
+.td, th {
   text-align: center;
   color: #101010;
   padding: 8px;
   width: 20px;
 }
 
-tr {
+.tr {
   background-color: #b3caa641;
   border-radius: 100%;
 }
