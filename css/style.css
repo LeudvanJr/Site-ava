@@ -103,16 +103,28 @@ li a:hover:not(.active) {
 
 .content{
   position: absolute;
-  width: 78%;
+  width: 76%;
   right: 0;
   background-color: #fff;
   border-top-left-radius: 150px;
-  height: 100%;
+  bottom: 0px;
+  height: min-content;
   top: 46%;
   z-index: -1;
 }
 
-.content h1 {
+.contentG{
+  position: absolute;
+  width: 78%;
+  right: 0;
+  background-color: #fff;
+  border-top-left-radius: 150px;
+  height: 85.93%;
+  top: 14.07%;
+  z-index: -1;
+}
+
+.content h1, .contentG h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -122,6 +134,7 @@ li a:hover:not(.active) {
 
   color: #585757;
 }
+
 
 .perfil {
   padding-left: 10px;
@@ -142,6 +155,7 @@ svg {
   width: 23px;
   vertical-align: -7px;
   padding-right: 3px;
+}
 
 table {
   font-family: arial, sans-serif;
@@ -151,6 +165,7 @@ table {
   border: solid #ccc 1px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
+}
 
 table {
   font-family: arial, sans-serif;
@@ -224,12 +239,12 @@ th{
 .column {
   float: left;
   width: 25%;
-  padding: 0px 60px;
+  padding: 0% 4%;
   height: 100%;
 }
 
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
+/* Remove extra left and right margins, due to padding ALTERADO*/
+.row {margin: 0 0px;}
 
 
 /* Clear floats after the columns */
@@ -319,7 +334,7 @@ text-align: center;
   width: 100%;
   white-space: nowrap;
   margin: 0 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 0px 54px;
   box-sizing: border-box;
 }
