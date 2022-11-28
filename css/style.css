@@ -100,26 +100,46 @@ li a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
-
 .content{
   position: absolute;
   width: 78%;
   right: 0;
+  /* 
+  height: 85.93%; 
+  */
+  padding-left: 33px;
+  top: 45.07%;
   background-color: #fff;
   border-top-left-radius: 150px;
-  height: 100%;
-  top: 46%;
+  bottom: 0px;
+  height: max-content;
   z-index: -1;
 }
 
-.content h1 {
+.contentG{
+  position: absolute;
+  width: 78%;
+  right: 0;
+  /* 
+  height: 85.93%; 
+  */
+  padding-left: 33px;
+  top: 14.07%;
+  background-color: #fff;
+  border-top-left-radius: 150px;
+  bottom: 0px;
+  height: min-content;
+  z-index: -1;
+}
+
+.content h1, .contentG h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 42px;
   margin-top: 85px;
   margin-left: 75px;
-
+  margin-bottom: 0px;
   color: #585757;
 }
 
@@ -142,6 +162,7 @@ svg {
   width: 23px;
   vertical-align: -7px;
   padding-right: 3px;
+}
 
 table {
   font-family: arial, sans-serif;
@@ -151,6 +172,7 @@ table {
   border: solid #ccc 1px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
+}
 
 table {
   font-family: arial, sans-serif;
@@ -357,4 +379,45 @@ text-align: center;
 .img-globo img{
   margin-left: 1020px;
   margin-top: 15px;
+}
+
+.adicionar-tema{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #585757a1;
+  background-color: transparent;
+  border: 0;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+.adicionar-tema:hover{
+  color: #585757ee;
+}
+
+.adicionar-estudo{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #2EAADC;
+  border: 0;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 6px;
+  margin-right: 63px;
+}
+
+.relative-flex{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .adicionar-estudo{
+    content-visibility: unset;
+  }
 }
