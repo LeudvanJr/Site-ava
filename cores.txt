@@ -1,0 +1,9 @@
+#B3CAA6 (verde dominante)
+#5AA13E (verde escuro)
+#72B08A (verde claro)
+#F5FBF1 (Branco)
+#40493B (Cinza)
+
+#16A085 (verde - feito)
+#d4cc2e (amarelo - fazendo)
+#fd4c34dc (vermelho - atrasado)
