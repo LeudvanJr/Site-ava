@@ -30,6 +30,7 @@ if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
     ?>
 
     <div class="contentG">
+  
         <h1>
             To-do-list
         </h1>

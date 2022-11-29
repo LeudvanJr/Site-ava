@@ -57,7 +57,8 @@ if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
 
                     <!-- Form -->
                     <div class="container">
-                        <form action="action_page.php">
+
+                        <form method="POST" action="processa.php">
 
                             <!-- Nome do Estudo -->
                             <div class="row">
@@ -65,8 +66,9 @@ if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
                                     <label for="fname">Nome</label>
                                 </div>
                                 <div class="col-75">
-                                    <input type="text" id="fname" name="firstname" placeholder="Geometria Analítica..."
-                                        required>
+
+                                <input type="text" name="nome" placeholder="Digite o nome do estudo" required>
+
                                 </div>
                             </div>
 
@@ -76,7 +78,9 @@ if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
                                     <label for="lname">Encerramento</label>
                                 </div>
                                 <div class="col-75">
-                                    <input type="date" id="dataEncerramento" name="data_encerramento">
+
+                                <input type="date" name="encerramento">
+                                  
                                 </div>
                             </div>
 
@@ -86,6 +90,7 @@ if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
                                     <label for="country">Tema</label>
                                 </div>
                                 <div class="col-75">
+
                                     <select id="tema" name="tema" required>
                                         <option value="historia">História</option>
                                         <option value="matematica_avancada">Matematíca Avançada</option>
@@ -100,8 +105,12 @@ if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
                                     <label for="subject">Descrição</label>
                                 </div>
                                 <div class="col-75">
-                                    <textarea id="subject" name="subject" placeholder="Descrição do seu estudo..."
-                                        style="height:200px"></textarea>
+
+                                    <!-- <textarea id="subject" name="subject" placeholder="Descrição do seu estudo..."
+                                        style="height:200px"></textarea> -->
+
+                                        <input type="text" name="descricao" placeholder="descricao"><br><br>
+
                                 </div>
                             </div>
 

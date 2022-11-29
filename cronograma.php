@@ -23,7 +23,7 @@ if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
 
 <body>
 
-<?php
+  <?php
     include_once('php/barraLateral.php');
   ?>
 

@@ -31,14 +31,18 @@ if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
       Boa Tarde,  <?php echo $_SESSION['nome'];?>
     </p>
     <p id="diaDeHoje">
-      Sexta-Feira, 3 de Junho
+      <?php
+          setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
+          date_default_timezone_set('America/Sao_Paulo');
+          echo strftime('%A, %d de %B de %Y', strtotime('today'));
+      ?>
     </p>
   </div>
 
   <?php
     include_once('php/barraLateral.php');
   ?>
-  
+
   <div class="img-globo">
     <img src="images/image.png" alt="">
 
