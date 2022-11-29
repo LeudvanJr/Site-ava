@@ -13,15 +13,6 @@
 
 <body>
 
-    <div class="header">
-        <p id="mensagemTopo">
-            Boa Tarde, Leudvan!
-        </p>
-        <p id="diaDeHoje">
-            Sexta-Feira, 3 de Junho
-        </p>
-    </div>
-
     <ul>
         <li class="perfil">
             <img src="images/perfil.png" alt="">
@@ -94,39 +85,43 @@
                 Ajustes</a></li>
     </ul>
 
-  <div class="content">
-    <h1>
-      To-do-list
-    </h1>
+    <div class="contentG">
+        <h1>
+            To-do-list
+        </h1>
 
-    <div class="coluna">
+        <div class="coluna">
 
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <h3>Para fazer - 8</h3>
-            <p>Some text</p>
-            <p>Some text</p>
-          </div>
-        </div>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <h3>Para fazer - 8</h3>
+                        <p>Some text</p>
+                        <p>Some text</p>
+                    </div>
+                </div>
 
-        <div class="column">
-          <div class="card">
-            <h3>Fazendo - 2</h3>
-            <p>Some text</p>
-            <p>Some text</p>
-            <p>Some text</p>
-            <p>Some text</p>
-            <p>Some text</p>
-          </div>
-        </div>
+                <div class="column">
+                  <div class="card">
+                    <h3>Fazendo - 2</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Opa</p>
+                    <p>Teste</p>
+                  </div>
+                </div>
 
-        <div class="column">
-          <div class="card">
-            <h3>Feito - 28</h3>
-            <p>Some text</p>
-            <p>gipjsrghji</p>
-          </div>
+                <div class="column">
+                    <div class="card">
+                        <h3>Feito - 28</h3>
+                        <p>Some text</p>
+                        <p>gipjsrghji</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
